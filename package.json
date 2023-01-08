@@ -22,10 +22,10 @@
   "author": "Code with MMAK",
   "license": "ISC",
   "devDependencies": {
-    "@playwright/test": "^1.29.1",
+    "@playwright/test": "^1.29.2",
     "allure-commandline": "^2.20.1",
     "allure-playwright": "^2.0.0-beta.23",
-    "playwright": "^1.29.1",
+    "playwright": "^1.29.2",
     "rimraf": "^3.0.2"
   }
 }
