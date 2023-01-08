@@ -1,0 +1,31 @@
+{
+  "name": "playwright-lambdatest-javascript",
+  "version": "1.0.0",
+  "description": "This is Test Automation framework designed using Playwright, and JavaScript to execute on LambdaTest",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf playwright-report && rimraf allure-results && rimraf allure-report",
+    "test": "npm run clean && npx playwright test",
+    "lambdatest": "npm run clean && npx playwright test --config=./lambdatest.config.js --reporter=line,html,allure-playwright",
+    "allure-report": "npx allure generate ./allure-results && allure open"
+  },
+  "keywords": [
+    "node",
+    "javascript",
+    "allure-report",
+    "rimraf",
+    "lambdatest",
+    "allure-reporting",
+    "playwright-tests",
+    "lambdatest-playwright"
+  ],
+  "author": "Code with MMAK",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.29.1",
+    "allure-commandline": "^2.20.1",
+    "allure-playwright": "^2.0.0-beta.23",
+    "playwright": "^1.29.1",
+    "rimraf": "^3.0.2"
+  }
+}

@@ -1,2 +1,52 @@
-# playwright-lambdatest-javascript
-This is Test Automation framework designed using Playwright, and JavaScript to execute on LambdaTest
+---
+# Playwright and LambdaTest Setup Guide
+---
+
+## Features of this framework
+* Playwright Expect (Assertions)
+* [Reporting: Allure](https://www.npmjs.com/package/allure-playwright)
+* [Cloud Integration: LambdaTest](https://www.lambdatest.com/)
+
+## Getting started
+
+### Pre-requisites
+* Download and install Node.js
+* Download and install any Text Editor like Visual Code/Sublime/Brackets
+
+### Setup Visual Code
+* Install GitLens Extension from the Marketplace: `GitLens — Git supercharged by GitKraken https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens`
+* Go to Visual Code Preference > Setting and search `formatOnSave` and enable/ON it.
+
+### Setup Scripts 
+* Clone the repository into a folder
+* Go to Project root directory and install Dependency: `npm install`
+* All the dependencies from package.json would be installed in node_modules folder.
+
+## How to Run Test Locally
+* Go to the Project root directory and run command: `npm test`
+
+### How to view default Playwright HTML report
+* Go to the Project root directory: `./playwright-report/index.html`
+
+### Playwright Default HTML Test Report
+![Playwright Default HTML Test Report](./assets/html-test-report.PNG?raw=true "Playwright Default HTML Test Report")
+
+### How to view Allure HTML report
+* Go to the Project root directory and run command: `npm run allure-report`
+* Go to the Project root directory: `./allure-report/index.html`
+
+### Allure Test Report
+![Allure Test Report](./assets/allure-test-report.PNG?raw=true "Allure Test Report")
+
+![Allure Test Report Expanded View](./assets/allure-test-report-expanded-view.PNG?raw=true "Allure Test Report Expanded View")
+
+## How to Run Test on LambdaTest Cloud
+* Go to Project root directory and run command: `npm run lambdatest`
+
+### Terminal Test Result
+![Terminal Test Result](./assets/terminal-lt.PNG?raw=true "Terminal Test Result")
+
+### LambdaTest Cloud Results
+![LambdaTest Cloud Results](./assets/lambdatest-results.PNG?raw=true "LambdaTest Cloud Results")
+
+![LambdaTest Cloud Results Expanded View](./assets/lambdatest-results-expanded-view.PNG?raw=true "LambdaTest Cloud Results Expanded View")
