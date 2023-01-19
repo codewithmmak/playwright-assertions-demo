@@ -1,11 +1,11 @@
 ---
-# Playwright and LambdaTest Setup Guide
+# Playwright Assertions Demo Setup Guide
 ---
 
 ## Features of this framework
 * Playwright Expect (Assertions)
 * [Reporting: Allure](https://www.npmjs.com/package/allure-playwright)
-* [Cloud Integration: LambdaTest](https://www.lambdatest.com/)
+* [Cloud Integration: LambdaTest](http://www.lambdatest.com?fp_ref=md-moeen-ajaz40)
 
 ## Getting started
 
