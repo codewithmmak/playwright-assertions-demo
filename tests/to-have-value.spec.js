@@ -1,8 +1,8 @@
 const { test } = require("../lambdatest-setup");
 const { expect } = require("@playwright/test");
 
-test('First name on Registration page to have Id test', async ({ page }) => {
+test('Newsletter Yes radio is having value 1', async ({ page }) => {
     await page.goto('https://ecommerce-playground.lambdatest.io/index.php?route=account/register');
-    const firstname = page.locator("//input[@name='firstname']");
-    await expect(firstname).toHaveId("input-firstname");
+    const newsletterYesRadio = page.locator("#input-newsletter-yes");
+    await expect(newsletterYesRadio).toHaveValue("1");
 });

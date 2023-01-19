@@ -1,8 +1,8 @@
 const { test } = require("../lambdatest-setup");
 const { expect } = require("@playwright/test");
 
-test('First name on Registration page to have Id test', async ({ page }) => {
+test('Registration page is having text First name', async ({ page }) => {
     await page.goto('https://ecommerce-playground.lambdatest.io/index.php?route=account/register');
-    const firstname = page.locator("//input[@name='firstname']");
-    await expect(firstname).toHaveId("input-firstname");
+    const firstname = page.locator("label[for='input-firstname']");
+    await expect(firstname).toHaveText("First Name");
 });
